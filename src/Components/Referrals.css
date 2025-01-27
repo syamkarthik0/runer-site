@@ -1,0 +1,251 @@
+/* Referrals Container */
+.referrals-container {
+    margin-bottom: 450px;
+    width: 1350px;
+    height: 80px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 100px;
+  }
+  
+  /* Header Section */
+  .header-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .header-section h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Figtree';
+
+  }
+  
+  .referrals-count {
+    border: 1px solid #E7EEFF73;
+    border-radius: 4px;
+    background-color: #E7EEFF73;
+  }
+  
+  .count-text {
+    font-size: 16px;
+    color: #1255FE;
+  }
+  
+  /* Search Bar and Options */
+  .search-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: 1000px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+  }
+  
+  .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .three-dots {
+    width: 20px;
+    height: 20px;
+    margin-right: 1000px;
+    cursor: pointer;
+  }
+  
+  /* Tabs Container */
+  .tabs-container {
+    margin-top: 20px;
+  }
+  
+  .tab {
+    margin-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #6B7280;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .tab:hover {
+    color: #1255FE;
+    border-bottom: 2px solid #1255FE;
+  }
+  
+  /* Filters Container */
+  .filters-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    margin-top: -20px;
+    margin-left: 1100px;
+  }
+  
+  .calendar-filter, .export-filter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .calendar-filter:hover, .export-filter:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .calendar-filter img, .export-filter img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .calendar-filter span, .export-filter span {
+    font-size: 14px;
+  }
+
+
+
+
+
+
+/* Section 2 Header */
+.section2-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #E7EEFF4D;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: -18px;  
+  margin-top: 5px;
+  margin-right: -20px;
+}
+
+/* Individual Box within the Header */
+.section2-header-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  border-radius: 4px;
+  color: #1F2A37D9; /* Text color */
+  font-size: 14px;
+}
+
+/* Specific Gaps Between Items */
+.section2-header-item + .section2-header-item {
+  margin-left: 5px;
+}
+
+.section2-header-item:nth-child(2) {
+  margin-left: 6px; /* More gap between ID Number and Executive Name */
+}
+
+.section2-header-item:nth-child(3) {
+  margin-left: -50px;
+}
+
+.section2-header-item:nth-child(4) {
+  margin-left: 5px;
+}
+
+.section2-header-item:nth-child(5) {
+  margin-left: -50px;
+}
+
+.section2-header-item:nth-child(6) {
+  margin-left: 50px;
+}
+
+.section2-header-item:nth-child(7) {
+  margin-left: 5px;
+}
+
+.section2-header-item:nth-child(8) {
+  margin-left: -50px;
+}
+
+
+/* Square Box before ID Number */
+.square-box {
+  width: 20px;
+  height: 20px;
+  background-color: #1F2A374D; /* Square box color */
+  border-radius: 2px; /* Slight rounded corners for visual effect */
+  margin-right: -90px; /* Gap between square and ID Number */
+  margin-left: 20px;
+}
+
+
+
+
+/* Section 3 Styling */x
+.section3 {
+  margin-top: 20px;
+  height: 200px; /* Adjust the height as per your design */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+/* Styling for the Referral Image */
+.referral-image {
+  max-width: 316x; /* Adjust the size of the image */
+  max-height: 277px;
+  margin-top: 50px;
+  margin-left: 500px;
+  margin-bottom: 15px; /* Space between image and text */
+}
+
+/* Styling for the "no referrals yet" text */
+.no-referrals-text {
+  font-size: 16px;
+  color: #4b5563; /* Text color */
+  font-weight: 500;
+  text-align: center;
+}
+
+
+
+
+
+
+  
+  /* .section2, .section3 {
+    margin-top: 20px;
+    background-color: #fff;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+   */
+
+
+
+
+  

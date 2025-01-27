@@ -1,0 +1,38 @@
+.sidebar {
+  position: fixed; /* Fix the sidebar position */
+  top: 0; /* Align the sidebar with the top of the screen */
+  left: 0;
+  width: 98px;
+  height: 100vh; /* Ensure the sidebar spans the full height of the viewport */
+  background-color: #F9FAFB; /* Light background color */
+  color: #333; /* Darker text color for better contrast */
+  padding-top: 100px;
+}
+
+.sidebar-item {
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar-item img {
+  width: 46px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar-item a {
+  color: #333; /* Dark text color to match the new design */
+  text-decoration: none;
+}
+
+.sidebar-item a:hover {
+  color: #3498db; /* Optional: Change text color on hover for links */
+}
+
+.logout-item {
+  padding: 20px;
+  text-align: center;
+  padding-top: 250px;
+  
+}

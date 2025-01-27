@@ -1,0 +1,127 @@
+/* Support Section Styles */
+.support-section {
+    margin-bottom: 450px;
+    width: 1350px;
+    height: 100px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 100px;
+  }
+  
+  /* Section Header */
+  .support-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1255FE;
+    margin-bottom: 20px;
+    font-family: 'Figtree';
+
+  }
+  
+  /* Tickets Info */
+  .ticket-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+  
+  /* Individual Ticket Item with Divider */
+  .ticket-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #6B7280;
+    position: relative;
+  }
+  
+  .ticket-item img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Divider */
+  .ticket-item:not(:last-child)::after {
+    content: '';
+    height: 20px;
+    border-left: 1px solid #D1D5DB;
+    position: absolute;
+    right: -15px;
+  }
+  
+  .ticket-count {
+    font-weight: bold;
+    color: #111928D9;
+  }
+  
+  /* Open Tickets */
+  .open-tickets {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 3px;
+  }
+  
+  .open-tickets h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Radio Group */
+  .radio-group {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Individual Radio Button */
+  .radio-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+  }
+  
+  /* Style for text coloring */
+  .radio-item input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  /* Text Coloring for different priorities */
+  .radio-item.urgent {
+    color: #E73639D9; /* Red for Urgent */
+  }
+  
+  .radio-item.medium {
+    color: #FE9F41D9; /* Orange for Medium */
+  }
+  
+  .radio-item.low {
+    color: #4976E9; /* Blue for Low */
+  }
+  
+  /* Support Image Styling */
+  .support-image-container {
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .support-image {
+    max-width: 602px;
+    height: 298px;
+    border-radius: 8px;
+  }
+  
+  /* New text below the image */
+  .no-tickets-text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111928D9;
+    margin-top: 20px;
+  }
+  

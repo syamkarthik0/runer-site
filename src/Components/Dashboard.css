@@ -1,0 +1,992 @@
+.dashboard-container {
+    display: flex;
+    justify-content: flex-start; /* Align sections horizontally from left */
+    padding: 60px;
+    width: 100%;
+    max-width: 100vw; /* Ensure the container never exceeds the screen width */
+    height: 100vh; /* Ensure the container never exceeds the screen height */
+    box-sizing: border-box;
+    gap: 20px; /* Add space between the sections */
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+
+  }
+  
+ 
+
+  .left-side {
+    width: 380px; /* Fixed width for the left side */
+    height: 105%; /* Take full height of the container */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center;
+    background-color:#F9FAFB;
+    margin-left:50px;
+    margin-top: -5px;
+
+}
+
+.left-side-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: right;
+}
+
+.left-side-header h3 {
+    color: #1F2A37D9; 
+    font-family: 'Figtree';
+    font-size: 24px;
+}
+
+.left-side-header img {
+    width: 36px; /* Size for the add-section.svg */
+    cursor: pointer;
+}
+
+.search-bar-container4 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:36px;
+    align-items: center;
+    gap:5px;
+}
+
+.search-bar4 {
+    display: flex;
+    align-items: left;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 5px 15px;
+    width: 352px; /* Width of the search bar */
+    height: 36px;
+    background-color: #fff;
+}
+
+.search-bar4 input {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 16px;
+    flex: 1; /* Grow the input field */
+}
+
+.search-bar4 img {
+    width: 20px; /* Size of filter.svg */
+    cursor: pointer;
+}
+
+.three-dots4 {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 17px; /* Width of the search bar */
+    height: 35px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Center the content vertically */
+    text-align: center;
+}
+
+.center-content img {
+    width: 90px; /* Size of the add-section.svg */
+    margin-bottom: 5px;
+}
+
+.center-content p {
+    color: #1F2A37D9;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.onboard-text {
+    color: #4649E3; /* Text color */
+    font-size: 14px; /* Adjust font size */
+    align-self: flex-end; /* Align the text to the right */
+    margin-top: 15px; /* Space above the text */
+    margin-left: 280px; /* Add some margin to the right */
+}
+
+
+
+
+
+/* Center Side Styling */
+.center-side {
+    width: 654px; /* Fixed width for the center section */
+    height: 105%; /* Take full height of the container */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left; /* Align content to the left */
+    margin-top: 20px;
+    background-color:#F9FAFB;
+    margin-top: -5px;
+
+}
+
+/* Header for Center Side */
+.center-side-header {
+    font-size: 24px;
+    color: #1F2A37D9;
+    font-family: 'Figtree';
+    margin-bottom: 20px; /* Space below the header */
+    text-align: left; /* Align the header text to the left */
+    
+}
+
+/* Section Container: Flexbox for the 3 sections */
+.section-container {
+    display: flex;
+    justify-content: space-between; /* Distribute sections evenly */
+    gap: 10px; /* Add space between the sections */
+}
+
+/* Individual Section Styling */
+.section {
+    background-color: #FFFFFF; /* Light background for each section */
+    width: 120px; /* Set a width for each section */
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center; /* Center content inside each section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Header: Icon and Text */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align icon and text to the left */
+    gap: 10px; /* Add space between icon and text */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.section-header img {
+    width: 24px; /* Size of the message icon */
+    height: 24px;
+}
+
+.section-header span {
+    font-size: 12px;
+    color: #111928D9; /* Dark text color for header */
+    font-weight: bold;
+}
+
+/* Cost Value Styling */
+.sms-cost {
+    font-size: 36px; /* Large font for cost */
+    font-weight: bold;
+    color: #111928D9; /* Dark black color */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Divider Line */
+.section-divider {
+    border: 0;
+    height: 1px;
+    background-color: #1119280D; /* Dark straight line */
+    margin: 20px 0; /* Space around the divider */
+}
+
+/* Footer Text: Total Referral Cost */
+.section-footer {
+    font-size: 12px;
+    color: #666; /* Lighter text color */
+    text-align: center;
+}
+
+
+
+/* Total Runs Section (Spanning all three sections) */
+.total-runs-section {
+    background-color: #FFFFFF;
+    width: 100%; /* Span the width of all three sections */
+    padding: 1px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    font-family: 'Figtree';
+
+}
+
+/* Header: "Total Runs" on the left and "0" on the right */
+.total-runs-header {
+    display: flex;
+    justify-content: space-between; /* Align content to left and right */
+    font-size: 15px;
+    color: #1F2A37;
+    font-weight: bold;
+}
+
+/* Percentage Line: 0% */
+.total-runs-percentage {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Progress Bar Container */
+.progress-bar-container {
+    display: flex;
+    height: 10px; /* Set the height of the progress bar */
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #E0E0E0; /* Light background for the progress bar */
+}
+
+/* Progress Bars: Dark Blue (1%) and Light Blue (Remaining) */
+.progress-bar {
+    height: 100%;
+}
+
+.dark-blue {
+    background-color: #1255FE; /* Dark Blue */
+}
+
+.light-blue {
+    background-color: #D0DDFF; /* Light Blue */
+}
+
+/* Bottom Left Circles */
+.bottom-left-circles {
+    display: flex;
+    gap: 20px; /* Space between the circles */
+    margin-top: 10px; /* Space from the section above */
+}
+
+/* Circle Container: Align circle and text side by side */
+.circle-container {
+    display: flex;
+    align-items: center;  /* Vertically align text with the circle */
+    gap: 5px; /* Space between circle and text */
+}
+
+/* Circle Style */
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 5px;   /* Smaller size for the circle */
+    height: 5px;  /* Smaller size for the circle */
+    font-size: 12px; /* Font size inside the circle */
+    color: white;
+}
+
+/* Dark Blue Circle */
+.dark-blue-circle {
+    background-color: #1255FE;
+}
+
+/* Light Blue Circle */
+.light-blue-circle {
+    background-color: #D0DDFF;
+}
+
+/* Reduce font size for the text */
+.circle-container span {
+    font-size: 15px; /* Reduced font size for text */
+    font-weight: normal; /* Optional: To reduce the boldness of the text */
+}
+
+
+
+
+
+/* Referral Tracking Section */
+.referral-tracking-section {
+    background-color: #FFFFFF;
+    width: 100%; /* Span the width of the section */
+    padding: 4px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Referral Tracking Header */
+.referral-tracking-header {
+    font-size: 15px;
+    color: #1F2A37;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Figtree';
+    margin-bottom: 15px;
+    font-family: 'Figtree';
+
+}
+
+/* Referral Percentage Bar Container */
+.referral-percentage {
+    margin-bottom: 15px;
+}
+
+/* Percentage Bars and Values */
+.percentage-bar-container {
+    display: flex;
+}
+
+.percentage-bar {
+    width: 24%;  /* Adjust this to fit your design */
+    height: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.percentage-bar span {
+    font-size: 10px;
+    color: #11192899;
+    margin-right: 5px;
+    margin-bottom: 25px;
+}
+
+.blue {
+    background-color: #1255FE;
+}
+
+.orange {
+    background-color: #FEBB12;
+}
+
+.green {
+    background-color: #0DD137;
+}
+
+.pink {
+    background-color: #FE12CB;
+}
+
+/* Bottom Left Circles (for referral section) */
+.bottom-left-circles {
+    display: flex;
+    gap: 10px; /* Space between the circles */
+    margin-top: 10px; /* Space from the section above */
+}
+
+/* Circle Container: Align circle and text side by side */
+.circle-container {
+    display: flex;
+    align-items: center;  /* Vertically align text with the circle */
+    gap: 5px; /* Space between circle and text */
+}
+
+/* Circle Style */
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 5px;   /* Adjusted size for the circle */
+    height: 5px;  /* Adjusted size for the circle */
+    font-size: 12px; /* Font size inside the circle */
+    color: white;
+}
+
+/* Dark Blue Circle */
+.dark-blue-circle {
+    background-color: #1255FE;
+}
+
+/* Orange Circle */
+.orange-circle {
+    background-color: #FEBB12;
+}
+
+/* Green Circle */
+.green-circle {
+    background-color: #0DD137;
+}
+
+/* Pink Circle */
+.pink-circle {
+    background-color: #FE12CB;
+}
+
+/* Reduce font size for the text inside the circle */
+.circle-container span {
+    font-size: 12px; /* Reduced font size for text */
+    font-weight: normal; /* Optional: To reduce the boldness of the text */
+}
+
+
+
+
+
+/* Main Container */
+.referral-tracking-container {
+    background-color: #FFFFFF;
+    width: 100%; /* Span the width of the section */
+    padding: 4px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Referral Header */
+.referral-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.referral-header-title {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Figtree';
+    color: #111928D9;
+}
+
+.this-week-container {
+    display: flex;
+    align-items: center;
+}
+
+.this-week-border {
+    border: 1px solid #11192899;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px; /* Font size of "This Week" */
+    color:#11192899;
+    border-radius: 5px;  /* Rounded corners for the container */
+    padding: 1px 5px;  /* Padding to make the border look better */
+
+}
+
+.arrow-down {
+    width: 10px;
+    height: 10px;
+}
+
+.options-icon {
+    margin-left: 10px;
+    width: 20px;
+    height: 10px;
+}
+
+/* Referral Info */
+.referral-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left-info, .right-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dark-black {
+    font-size: 14px;
+    color: #000;
+}
+
+.light-black {
+    font-size: 12px;
+    color: #808080;
+}
+
+
+/* Graph Section */
+.graph-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;  /* Ensures that items in the graph align at the bottom */
+    height: 250px;  /* Set height for the graph */
+    margin-bottom: 30px;
+    margin-top: -150px;
+}
+
+.graph {
+    display: flex;
+    flex-grow: 1;  /* Ensure that the graph takes up available width */
+    justify-content: space-between;
+    
+    
+}
+
+.y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;  /* Full height of the graph container */
+    margin-right: 10px;
+    gap:5px;
+}
+
+.y-axis span {
+    font-size: 12px;
+}
+
+/* Ensure all days have the same general flex structure */
+.x-axis {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.x-axis > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+/* Optional: Add more specific styles for each day if necessary */
+.Mon, .Tue, .Wed, .Thur, .Fri, .Sat, .Sun {
+    height: 100px;  /* Fixed height for each day's container, if needed */
+}
+
+.day {
+    font-size: 12px;
+    color: #808080;
+    text-align: center;
+    margin-top: -30px; /* Space between the bars and the date */
+    display: flex;
+    margin-left:45px;
+    gap: 39px; /* Adjust this value to increase or decrease the gap */
+}
+
+
+.blue-border, .pink-border, .yellow-border {
+    width: 10px;  /* Set a consistent width for each bar */
+    border-radius: 3px;
+    flex-grow: 1;  /* Allow the bars to grow based on their height */
+}
+
+.blue-border {
+    background-color: #1255FE;
+}
+
+.pink-border {
+    background-color: #FE12CB;
+}
+
+.yellow-border {
+    background-color: #FEBB12;
+}
+
+
+/* Bottom Line with Circles */
+.bottom-line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+    margin-top: 20px;
+    margin-left:100px;
+
+}
+
+.circle1 {
+    width: 12px;
+    height: 8px;
+    border-radius: 25px;
+    display: flex;
+    margin-left:30px;
+}
+
+.dark-blue {
+    background-color: #1255FE;
+}
+
+.pink {
+    background-color: #FE12CB;
+}
+
+.yellow {
+    background-color: #FEBB12;
+}
+
+.bottom-line span {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/* Right Side Styling */
+.right-side {
+    width: 654px; /* Fixed width for the center section */
+    height: 105%; /* Take full height of the container */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left; /* Align content to the left */
+    margin-top: 20px;
+    background-color:#F9FAFB;
+    margin-top: -5px;
+    
+}
+
+.right-side-header {
+    font-size: 24px;
+    color: #1F2A37D9;
+    font-family: 'Figtree';
+    margin-bottom: 20px; /* Space below the header */
+    text-align: left; /* Align the header text to the left */
+}
+
+/* Section Container for Right Side */
+.section-container {
+    display: flex;
+    justify-content: space-between; /* Distribute sections evenly */
+    gap: 10px; /* Add space between the sections */
+}
+
+.section {
+    background-color: #FFFFFF; /* Light background for each section */
+    width: 130px; /* Set a width for each section */
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center; /* Center content inside each section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Section Header Styling */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align icon and text to the left */
+    gap: 10px; /* Add space between icon and text */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* SMS Cost Styling */
+.sms-cost1 {
+    font-size: 32px; /* Large font for cost */
+    font-weight: bold;
+    color: #111928D9; /* Dark black color */
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Section Divider */
+.section-divider1 {
+    border: 0;
+    height: 1px;
+    background-color: #1119280D; /* Dark straight line */
+    margin: 10px 0; /* Space around the divider */
+}
+
+/* Executive Stats */
+.executive-stats {
+    display: flex;
+    gap:50px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #111928D9;
+    margin-top:5px;
+    width:150px;
+    height:20px;
+}
+
+.executive-right {
+    color: #111928D9;
+}
+
+/* Bottom Circles */
+.bottom-right-circles {
+    display: flex;
+    gap: 20px; /* Space between the circles */
+    margin-top: 5px; /* Space from the section above */
+}
+
+.circle-container {
+    display: flex;
+    align-items: center;  /* Vertically align text with the circle */
+    gap: 5px; /* Space between circle and text */
+
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 5px;   /* Smaller size for the circle */
+    height: 5px;  /* Smaller size for the circle */
+    font-size: 12px; /* Font size inside the circle */
+    color: white;
+}
+
+
+.dark-blue-circle {
+    background-color: #1255FE;
+}
+
+.light-blue-circle {
+    background-color: #D0DDFF;
+}
+
+
+
+
+
+/* Section Container */
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FFFFFF; /* Light background for each section */
+    margin-top:10px;    
+}
+
+/* Revenue Section */
+.revenue {
+    flex: 1;
+}
+
+.revenue .section-header1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size:16px;
+}
+
+.revenue .section-header1 img {
+    margin-right: 10px;
+    width:28px;
+}
+
+.revenue-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111928D9;
+}
+/* Comparison Stats: Individual Boxes */
+.comparison-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 90px;
+    gap: 10px;
+    margin-top: -10px;
+    color: #11192873;
+}
+
+/* Individual Stat Box */
+.comparison-stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 1px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+/* Title for Each Comparison Stat */
+.comparison-title {
+    margin-bottom: 15px;
+    margin-top:10px;
+    font-weight: bold;
+    color: #11192873; /* Apply blue color to the text */
+}
+
+/* Stat Graph (Percentage with SVG next to it) */
+.stat-graph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:-5px;
+}
+
+/* Percentage Style */
+.percentage-blue {
+    color: #1255FE; /* Blue color for percentage */
+    font-weight: bold;
+    margin-left: -5px; /* Space between SVG and percentage text */
+}
+
+/* SVG Image for Growth */
+.stat-graph img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px; /* Space between SVG and text */
+}
+
+
+
+
+
+/* Total Performers Section */
+.performers-section {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #FFFFFF; /* Light background */
+    border-radius: 8px;
+}
+
+/* Section Header */
+.performers-section .section-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111928;
+    margin-bottom: 1px;
+}
+
+/* Container for Performer SVGs */
+.performers-svg-container {
+    display: flex;
+    justify-content: space-between; /* Place SVGs next to each other */
+    gap: 20px; /* Space between the SVGs */
+    align-items: center;
+}
+
+/* Performer SVG Styling */
+.performer-svg {
+    width: 83px;  /* Increase width */
+    height: 50px; /* Increase height */
+    object-fit: contain; /* Ensures the entire image is visible and scales properly */
+}
+
+
+
+
+
+/* Executives Section */
+.executives-section {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #FFFFFF; /* Light background */
+    border-radius: 8px;
+}
+
+/* Section Header: List of Executives and Search Bar */
+.executives-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Left side: List of Executives title */
+.executives-header span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111928;
+}
+
+/* Executives Count */
+.executives-count {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #5C6C74;
+    margin-left: 10px;
+}
+
+
+.search-bar-container2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:36px;
+    align-items: center;
+    gap:5px;
+}
+
+.search-bar2 {
+    display: flex;
+    align-items: right;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 5px 15px;
+    width: 100%; /* Width of the search bar */
+    height: 25px;
+    background-color: #fff;
+}
+
+.search-bar2 input {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 16px;
+    flex: 1; /* Grow the input field */
+}
+
+.search-bar2 img {
+    width: 20px; /* Size of filter.svg */
+    cursor: pointer;
+}
+/* Three dots icon */
+.three-dots2 {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.filter{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Table Header: Name, ID Number, Leads, Status */
+.executives-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Left side: Name */
+.executives-table-header span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5C6C74;
+}
+
+/* Right side: ID Number, Leads, Status, and Arrow */
+.executives-table-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.executives-table-details span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #6B7280;
+}
+
+.executives-table-details img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Styling the "0" */
+.zero-onboard {
+    color: #1255FE; /* Set the desired color for "0" */
+}

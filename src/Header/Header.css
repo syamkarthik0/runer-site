@@ -1,0 +1,120 @@
+/* Header container */
+.header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between the items */
+  align-items: center; /* Vertically center items */
+  padding: 10px 20px; /* Padding for spacing */
+  position: fixed; /* Make the header fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Left section (Company Logo and Icon) */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo-icon {
+  position: absolute;
+  Width:44px;
+  Height:38.1px;
+  top: 29px;
+  left: 26px;
+}
+
+/* Company logo below the title */
+.company-logo {
+  position: absolute;
+  Width:97px;
+  Height:58px;
+  top: 22px;
+  left: 130px;
+  size:36px;
+  line-height: 57.6px;
+}
+
+/* Right section (Search Bar, Notification, Profile) */
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align all items to the right */
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc; /* Light border for the search bar */
+  border-radius: 15px; /* Rounded corners */
+  padding: 5px 15px;
+  width: 270px; /* Set width of the search bar */
+  height:36px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color:#F9FAFB;
+  font-size: 16px;
+  flex: 1; /* Makes the input grow to fill available space */
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.notification {
+  position: relative;
+  margin-left: 5px;
+}
+
+.notification img {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .profile img {
+    width: 36px; /* Profile picture size */
+    height: 36px;
+    border-radius: 50%; /* Circle-shaped picture */
+    margin-right: 10px;
+  }
+
+  .profile .name-role {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  .profile .name-role .name {
+    font-weight: bold;
+    color: #333; /* Dark text for name */
+
+  }
+
+  .profile .name-role .role {
+    font-size: 12px;
+    color: #777; /* Lighter color for role */
+  }
+
+  .profile .arrow-down {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-bottom:10px;
+  }
