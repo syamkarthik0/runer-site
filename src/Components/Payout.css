@@ -1,5 +1,5 @@
 /* Referrals Container */
-.referrals-container {
+.payout-container {
     margin-bottom: 500px;
     width: 1350px;
     height: 80px;
@@ -24,7 +24,7 @@
 
   }
   
-  .referrals-count {
+  .payout-count {
     border: 1px solid #E7EEFF73;
     border-radius: 4px;
     background-color: #E7EEFF73;
@@ -42,6 +42,7 @@
     align-items: center;
     margin-top: -30px;
     margin-left: 1000px;
+    
   }
   
   .search-bar {
@@ -186,6 +187,10 @@
   margin-left: -50px;
 }
 
+.section2-header-item:nth-child(9) {
+    margin-left: 5px;
+  }
+
 
 /* Square Box before ID Number */
 .square-box {
@@ -214,7 +219,7 @@
 }
 
 /* Styling for the Referral Image */
-.referral-image {
+.payout-image {
   max-width: 316x; /* Adjust the size of the image */
   max-height: 277px;
   margin-top: 50px;
@@ -223,7 +228,7 @@
 }
 
 /* Styling for the "no referrals yet" text */
-.no-referrals-text {
+.no-payout-text {
   font-size: 16px;
   color: #4b5563; /* Text color */
   font-weight: 500;
@@ -233,4 +238,3 @@
 
 
 
-  
